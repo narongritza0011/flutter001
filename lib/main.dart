@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter001/screen/NewPage.dart';
+import 'package:flutter001/screen/BasicWidgetEP1Page.dart';
+import 'package:flutter001/screen/Ep14Page.dart';
+import 'package:flutter001/screen/ep13Page.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(title: 'ทดสอบการเขียน'),
     );
@@ -101,28 +103,28 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => NewPage()),
+                  MaterialPageRoute(builder: (context) => BasicWidgetEp1page()),
                 );
               },
-              child: Text('New Page'),
+              child: Text('BasicWidgetEp11'),
             ),
             RaisedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => NewPage()),
+                  MaterialPageRoute(builder: (context) => Ep13Page()),
                 );
               },
-              child: Text('New Page'),
+              child: Text('EP13 - Basic Widget'),
             ),
             RaisedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => NewPage()),
+                  MaterialPageRoute(builder: (context) => Ep14Page()),
                 );
               },
-              child: Text('New Page'),
+              child: Text('Ep14-Snack Bar & Dialog'),
             ),
 
             Text(
